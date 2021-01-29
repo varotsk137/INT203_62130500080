@@ -17,6 +17,11 @@
   <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
   <!-- Vue CDN -->
   <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
 
 </head>
 
@@ -25,7 +30,7 @@
     <div id="header" class="flex p-4 flex-row space-x-4">
       <div class="flex-none"><img src="images/pixiv_logo_w.svg"></div>
       <!-- <div class="flex flex-shrink-0 items-center w-max h-9  bg-white rounded" style="font-family: Arial, Helvetica, sans-serif;"> -->
-        <div class="flex flex-shrink-0 items-center w-max h-9  bg-white rounded" style="font-family: Arial, sans-serif;">
+      <div class="flex flex-shrink-0 items-center w-max h-9  bg-white rounded">
         <form class="flex items-center space-x-1 px-2">
           <i class="material-icons opacity-40 text-base font-extrabold">
             search
@@ -36,7 +41,27 @@
 
     </div>
 
-    <div id="mainbox">
+    <div id="mainbox" class="lg:mx-auto ml-96 my-auto bg-white opacity-90 w-80 h-96 rounded">
+
+      <div id="logo" class="py-8 text-sm font-bold text-center text-gray-500 text-sm space-y-2">
+        <img src="images/Pixiv_logo.svg" class="mx-auto" width="164" height="64">
+        <p>Spice up your creating process</p>
+      </div>
+
+      <div id="account" class="text-center space-y-2 py-2">
+        <div id="createaccount"
+          class="transition ease-in-out w-5/6 h-10 mx-auto bg-blue-400 hover:bg-blue-500 rounded-full text-white text-base font-bold leading-10 align-middle">
+          Create an account
+        </div>
+        <div id="login"
+          class="transition ease-in-out w-5/6 h-10 mx-auto bg-gray-200 hover:bg-gray-300 rounded-full text-gray-600 text-base font-bold leading-10 align-middle">
+          Login
+        </div>
+      </div>
+
+      <div id="existacc" class="">
+
+      </div>
 
     </div>
 
